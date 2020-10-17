@@ -36,3 +36,11 @@ def find_pet_by_name(pets, name):
     for pet in pets["pets"]:
         if pet["name"] == name:
             return pet
+
+def remove_pet_by_name(pets, name):
+    for pet in pets["pets"]:
+        if pet["name"] == name:
+            pets["pets"].remove(pet)
+
+
+   
