@@ -8,3 +8,9 @@ def get_pet_shop_name(self):
 def get_total_cash(self):
     
     return self["admin"]["total_cash"]
+
+def add_or_remove_cash(self, cash):
+    # print(cash)
+    # print(self["admin"]["total_cash"])
+    self["admin"]["total_cash"] += cash
+    return self
