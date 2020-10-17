@@ -21,3 +21,9 @@ def get_pets_sold(self):
 def increase_pets_sold(self, sold):
     self["admin"]["pets_sold"] += sold
     return self
+
+def get_stock_count(self):
+    return len(self["pets"])
+
+
+
