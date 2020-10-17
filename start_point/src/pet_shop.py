@@ -51,3 +51,9 @@ def get_customer_cash(cash):
 def remove_customer_cash(customer, cash):
     customer["cash"] -= cash
     return customer["cash"]
+
+def get_customer_pet_count(counts):
+    count = 0
+    for count in counts["pets"]:
+        count +=counts["pets"]
+    return count
