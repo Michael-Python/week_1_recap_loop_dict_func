@@ -14,3 +14,6 @@ def add_or_remove_cash(self, cash):
     # print(self["admin"]["total_cash"])
     self["admin"]["total_cash"] += cash
     return self
+
+def get_pets_sold(self):
+    return self["admin"]["pets_sold"]
