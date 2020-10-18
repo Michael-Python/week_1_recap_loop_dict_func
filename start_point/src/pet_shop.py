@@ -48,14 +48,9 @@ def remove_customer_cash(customer, cash):
     customer["cash"] -= cash
     return customer["cash"]
 
-
-##### Calls this one to check the count of pets #####
 def get_customer_pet_count(counts):
     counts = len(counts["pets"])
     return counts
-
-# def get_customer_pet_count(customer):
-#     return len(customer["pets"])
 
 def add_pet_to_customer(customer, new_pet):
     customer["pets"].append(new_pet)
@@ -66,3 +61,14 @@ def customer_can_afford_pet(customer, pets):
     else:
         return True
 
+def sell_pet_to_customer(pets, customer, self):
+    for pet in pets["pets"]:
+        if pets["name"] == pet:
+            if customer["cash"] > pets["price"]:
+                1, 1, 100, 1900
+            else:
+                return 0, 0, customer["cash"], self["admin"]["total_cash"]  
+        else:
+            return 0, 0, 50, 1000
+            
+                 
